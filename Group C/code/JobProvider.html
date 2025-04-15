@@ -13,9 +13,12 @@
     <div class="logo">Logo</div>
     <nav>
       <ul>
+        <li><a href="JobP.html" class="view-posted-btn">View My Posted Jobs</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Job Listings</a></li>
         <li><a href="#">Resources</a></li>
+        <li><a href="#" id="logoutLink" style="text-decoration:none; color:red;">Logout</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -25,18 +28,19 @@
     <form id="job-form">
       <label for="title">Job Title</label>
       <input type="text" id="title" name="title" required />
-
+    
       <label for="domain">Job Domain</label>
       <input type="text" id="domain" name="domain" required />
-
+    
       <label for="location">Job Location</label>
       <input type="text" id="location" name="location" required />
-
+    
       <label for="description">Job Description</label>
       <textarea id="description" name="description" rows="5" required></textarea>
-
+      <input type="hidden" name="posted_by" value="1" />
       <button type="submit">Post</button>
     </form>
+    
   </main>
 
   <footer>

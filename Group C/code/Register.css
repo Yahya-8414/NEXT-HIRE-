@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,26 +11,27 @@ body {
 }
 .container {
     display: flex;
-    width: 60%;
+    width: 800px;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
 }
-.login-box {
-    position: relative; /* Ensures z-index is applied */
-    z-index: 10;         /* Higher z-index so it appears on top */
-    padding: 5%;
+.register-box {
+    position: relative;
+    z-index: 2;
+    flex: 2;
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    left: 9%;
+    left: 2%;
 }
-
-.login-box h2 {
+.register-box h2 {
     margin-bottom: 20px;
 }
-.login-box input {
+.register-box input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -51,28 +54,41 @@ body {
     color: #007BFF;
 }
 button {
-    width: 40%;
-    padding: 4%;
+    width: 45%;
+    padding: 10px;
     background: #123458;
     color: white;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
-    margin-left: 60%;
+    margin-left: 55%;
     cursor: pointer;
 }
 .image-section {
-    position: relative; /* Ensures z-index is applied */
-    z-index: 1;         /* Lower z-index so it stays behind the login box */
-    width: 60%;
-    clip-path: polygon(0 0, 100% 100%, 100% 0 );
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    clip-path: polygon(100% 100%, 50% 100%, 100% 60%);
 }
 .image-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.social-login {
+.social-register {
     text-align: center;
     margin-top: 20px;
+}
+
+.image-section1 {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+   clip-path: polygon(0 0, 0 60%, 100% 0);
+}
+.image-section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }

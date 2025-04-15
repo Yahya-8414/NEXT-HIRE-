@@ -12,36 +12,25 @@
       <div class="logo">Logo</div>
       <nav>
         <ul class="nav-links">
+
           <li><a href="#">Home</a></li>
           <li><a href="#">Job Listings</a></li>
           <li><a href="#">Resources</a></li>
+          <li><a href="#" id="logoutLink" style="text-decoration:none; color:red;">Logout</a>
+          </li>
         </ul>
       </nav>
     </header>
-
+    <input type="text" id="jobSearch" placeholder="Search jobs..." />
     <main class="job-listings">
-      <div class="job-card">
-        <h2>Creative Writer</h2>
-        <p><strong>Mind Works Solution</strong></p>
-        <p>24 Sept 2019</p>
-        <p>Pune</p>
-        <button>Apply</button>
-      </div>
-      <div class="job-card">
-        <h2>Creative Writer</h2>
-        <p><strong>Mind Works Solution</strong></p>
-        <p>24 Sept 2019</p>
-        <p>Pune</p>
-        <button>Apply</button>
-      </div>
-      <div class="job-card">
-        <h2>Creative Writer</h2>
-        <p><strong>Mind Works Solution</strong></p>
-        <p>24 Sept 2019</p>
-        <p>Pune</p>
-        <button>Apply</button>
-      </div>
+      <!-- Only one search input -->
+    
+    
+      <!-- This will be populated dynamically -->
+      <div id="jobContainer"></div>
+      <div id="appliedJobsContainer"></div>
     </main>
+    
 
     <footer class="footer">
       <p>© 2023 Company Name. All rights reserved.</p>

@@ -1,0 +1,8 @@
+Array
+(
+    [title] => A
+    [domain] => B
+    [location] => C
+    [description] => xyz
+    [posted_by] => 1
+)

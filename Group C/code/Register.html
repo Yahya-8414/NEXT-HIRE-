@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Register Page</title>
     <link rel="stylesheet" href="Register.css">
+   
 </head>
 <body>
+    
     <div class="container">
-        <div class="login-box">
-            <h1>Login</h1>
-            <form id="loginForm">
-                <input type="text" placeholder="Username" required>
+        <div class="image-section1">
+            <img src="../images/background.jpeg" alt="Blue image">
+        </div>
+        <div class="register-box">
+            <h1>Register</h1>
+            <form id="registerForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>
-                <div class="options">
-                    <label> <input type="checkbox"> Remember Me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <p>Don’t have an account? <a href="login.html">Register</a></p>
-            <div class="social-login">
-                <p>Or login with</p>
+              
+                <!-- New field: User Type -->
+                <label for="userType">Register as:</label>
+                <select id="userType" required>
+                  <option value="job_seeker">Job Seeker</option>
+                  <option value="job_provider">Job Provider</option>
+                </select>
+              
+                <button type="submit">Register</button>
+              </form>
+              
+            <p>Already have an account? <a href="login.html">Login</a></p>
+            <div class="social-register">
+                <p>Or register with</p>
                 <!-- Add social media icons here -->
             </div>
         </div>
